@@ -17,7 +17,7 @@ The code contains host_app.c which was not modified and mem_attack.py file,
     ps -aux | grep python3  
   * Run the Python script that modifies the memory  
     Use the found PID in the following command:  
-    python3 mem_attack.py 21566 0x64ed88 0 0 0 0 0  
+    sudo python3 mem_attack.py 21566 0x64ed88 0 0 0 0 0  
     21566 is the PID of the process we want to attack  
     0x64ed88 is the address in the heap of the buffer we want to overwrite.  
     This information is printed from the C library called by the line_follower_clib.py script  
